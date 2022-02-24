@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="List_servicii" directorySegmentName="seg_1" id="42BAF6F9-7BA7-E376-4551-5327B6EC6FE2">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="pret" id="1D945B8A-8181-8E62-8BF9-83C5DC77BB7B">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nume_serviciu" id="242370DA-9826-B917-38EA-C5C023EE906E">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_serviciu" id="2D200C22-19F5-6323-92C6-DEF6CDCF7259">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="durata" id="5637DDF5-8B1E-EDD4-2F4B-C1F6A134BE2D">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="clasa" id="DE4862F3-C078-9323-5BCB-40CB722745C2">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="List_servicii_PK" id="CABB0E17-9054-7486-1961-4AEBE2A14CE5">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

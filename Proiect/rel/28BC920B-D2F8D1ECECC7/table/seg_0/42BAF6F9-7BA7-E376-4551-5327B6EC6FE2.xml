@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="42BAF6F9-7BA7-E376-4551-5327B6EC6FE2" name="List_servicii">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>DFD91DCD-6D20-406C-F364-7E20919E46F9</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_serviciu" id="2D200C22-19F5-6323-92C6-DEF6CDCF7259">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>570F7704-69E8-2265-BFD6-CEE31C294A6E</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume_serviciu" id="242370DA-9826-B917-38EA-C5C023EE906E">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>81151774-103B-2A15-4427-07AFF062BC1F</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<constraintName>nume_serv_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="nume_serviciu IN (&apos;detailing interior&apos;,&apos;detailing motor&apos;,&apos;detailing exterior&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clasa" id="DE4862F3-C078-9323-5BCB-40CB722745C2">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>27564167-7127-74DE-1D53-A5BDD157BD90</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<constraintName>clasa_list_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="A" description=""/>
+<valueDef value="B" description=""/>
+<valueDef value="C" description=""/>
+<valueDef value="D" description=""/>
+</listOfValues>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="durata" id="5637DDF5-8B1E-EDD4-2F4B-C1F6A134BE2D">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>5C6549AC-F369-6130-377F-F03D1BAF3ADD</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<constraintName>durata_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="durata BETWEEN 0 AND 8"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pret" id="1D945B8A-8181-8E62-8BF9-83C5DC77BB7B">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>8DF45999-8D06-F8EA-810B-240C7B9766DE</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<constraintName>pret_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="pret &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CABB0E17-9054-7486-1961-4AEBE2A14CE5" name="List_servicii_PK">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>59149D22-01EA-4AE1-59B8-8EAD6A38988D</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D200C22-19F5-6323-92C6-DEF6CDCF7259"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

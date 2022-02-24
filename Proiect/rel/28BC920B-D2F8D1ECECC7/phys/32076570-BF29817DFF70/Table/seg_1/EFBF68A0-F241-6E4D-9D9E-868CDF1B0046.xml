@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Boxe" directorySegmentName="seg_1" id="EFBF68A0-F241-6E4D-9D9E-868CDF1B0046">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Latime" id="81247A81-00A2-BF73-49DD-D4FD3D8BF8FF">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Lungime" id="D2855697-FA2B-4673-A78B-001BC13E3550">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_boxa" id="E1FC38F1-11FE-C270-DBFE-90940127170F">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Boxe_PK" id="4AD2A1F5-399D-928F-4D10-E17AA150F661">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

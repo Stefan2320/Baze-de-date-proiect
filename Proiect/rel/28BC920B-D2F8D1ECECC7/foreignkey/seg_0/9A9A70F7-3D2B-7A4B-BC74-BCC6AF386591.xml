@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9A9A70F7-3D2B-7A4B-BC74-BCC6AF386591" containerWithKeyObject="606DC49D-0A95-4872-82F6-07448A974851" localFKIndex="7FF8E3D0-9413-3556-DFA8-C5FDDAE4239F" name="boxe_programari_fk">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>1D5C0F1A-1CBF-B486-2215-9EBADA5EA183</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<referredTableLongName>Boxe</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EFBF68A0-F241-6E4D-9D9E-868CDF1B0046</referredTableID>
+<keyObject>4AD2A1F5-399D-928F-4D10-E17AA150F661</keyObject>
+<referredKeyID>4AD2A1F5-399D-928F-4D10-E17AA150F661</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_boxa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

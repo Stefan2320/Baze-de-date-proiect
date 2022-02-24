@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F61162C4-CE2F-93A2-8E90-83EC03860570" containerWithKeyObject="606DC49D-0A95-4872-82F6-07448A974851" localFKIndex="F06239C1-7B01-7485-1A0D-E25E8BFBA3DF" name="servicii_programari_fk">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>40A46928-3E4D-A779-4565-EC6CD692BCFC</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<referredTableLongName>List_servicii</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>42BAF6F9-7BA7-E376-4551-5327B6EC6FE2</referredTableID>
+<keyObject>CABB0E17-9054-7486-1961-4AEBE2A14CE5</keyObject>
+<referredKeyID>CABB0E17-9054-7486-1961-4AEBE2A14CE5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_serviciu</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

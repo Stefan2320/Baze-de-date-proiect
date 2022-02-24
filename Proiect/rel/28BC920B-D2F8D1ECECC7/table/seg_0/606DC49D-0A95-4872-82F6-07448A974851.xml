@@ -1,0 +1,181 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="606DC49D-0A95-4872-82F6-07448A974851" name="Programari">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>4FD9C7CC-8A36-47B5-0C4B-CB167F29F0E0</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_prog" id="137D2BB7-C879-422F-E9FB-870B9E834194">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>05D8C3E1-3746-F6E1-FDDC-F7AC1288DC6E</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data" id="77CFE51E-006B-6A78-6F9D-DD4054082A1F">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>FCDDDE76-E4B7-D0FE-E8D0-3DEC632C8249</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<constraintName>data_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ora" id="9D04B91D-9ED9-984E-A221-4875859E7AC7">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>7152DCE2-EBA3-AE10-2236-3345C7D658A9</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<constraintName>Programari_ora_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="ora BETWEEN 0 AND 24"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_client" id="96645416-D989-53EB-49B4-0BD006222FA8">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>130E5B87-6599-FAFF-1ED2-60CCE893DAAF</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2745792A-E185-67A5-3F27-7AD477B6CF18" referredColumn="0FCCB6A0-F361-9008-3407-74022AE65B70"/>
+</associations>
+</Column>
+<Column name="ID_serviciu" id="DCB9EDBE-44A9-3FD6-8790-5EEE78781B7C">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>5683D590-C50C-F276-F4B1-6CC834B985FE</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F61162C4-CE2F-93A2-8E90-83EC03860570" referredColumn="2D200C22-19F5-6323-92C6-DEF6CDCF7259"/>
+</associations>
+</Column>
+<Column name="ID_boxa" id="8C198554-FE4A-8C30-D349-54225E858358">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>22AB0403-320A-2107-5CB0-719EBBA8E76D</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A9A70F7-3D2B-7A4B-BC74-BCC6AF386591" referredColumn="E1FC38F1-11FE-C270-DBFE-90940127170F"/>
+</associations>
+</Column>
+<Column name="ID_angajat" id="DF50EADA-9A7D-0E65-B49B-0BABCB9C746E">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>B7B90D5D-AF10-EC15-A2A9-A1F52EEF321D</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="16CABC41-8694-45F7-E458-116F2FBE5399" referredColumn="CB5A6735-18ED-5AE7-54E9-7C2A9E02EC28"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5B719929-19EC-A663-2414-30E3CA02F371" name="Programari_PK">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>F21B1998-3F64-D2AB-11A5-37D5547A7BE8</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="137D2BB7-C879-422F-E9FB-870B9E834194"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E9CDBA73-DFEC-C2DA-B025-65114C470D0E" name="prog_dob">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>8DAC8A5E-096E-25AC-70A2-6C265ED50A6D</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77CFE51E-006B-6A78-6F9D-DD4054082A1F"/>
+<colUsage columnID="9D04B91D-9ED9-984E-A221-4875859E7AC7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E0480A7-E0E0-D797-03D8-BF979F1366F3" name="angajati_programari_fk">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>5E95996E-8859-1DC8-8FC2-EA20AF85260B</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF50EADA-9A7D-0E65-B49B-0BABCB9C746E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7FF8E3D0-9413-3556-DFA8-C5FDDAE4239F" name="boxe_programari_fk">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>1D5C0F1A-1CBF-B486-2215-9EBADA5EA183</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C198554-FE4A-8C30-D349-54225E858358"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="906C43D9-69FC-4B77-B4C6-EDB32B40DF95" name="clienti_programari_fk">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>899A5AF8-0E81-D5A4-7D1B-95555760143F</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96645416-D989-53EB-49B4-0BD006222FA8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F06239C1-7B01-7485-1A0D-E25E8BFBA3DF" name="servicii_programari_fk">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>40A46928-3E4D-A779-4565-EC6CD692BCFC</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCB9EDBE-44A9-3FD6-8790-5EEE78781B7C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

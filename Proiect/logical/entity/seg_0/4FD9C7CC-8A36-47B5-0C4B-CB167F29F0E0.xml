@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4FD9C7CC-8A36-47B5-0C4B-CB167F29F0E0" name="Programari">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-11-05 10:31:10 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_prog" id="05D8C3E1-3746-F6E1-FDDC-F7AC1288DC6E">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 15:46:51 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data" id="FCDDDE76-E4B7-D0FE-E8D0-3DEC632C8249">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-11-05 10:31:25 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<constraintName>data_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ora" id="7152DCE2-EBA3-AE10-2236-3345C7D658A9">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-11-05 10:31:45 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<constraintName>Programari_ora_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="ora BETWEEN 0 AND 24"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_client" id="130E5B87-6599-FAFF-1ED2-60CCE893DAAF">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 15:53:44 UTC</createdTime>
+<generatorID>899A5AF8-0E81-D5A4-7D1B-95555760143F</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<referedAttribute>F7314B32-40CD-4105-C88D-D7719F8D7E26</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_serviciu" id="5683D590-C50C-F276-F4B1-6CC834B985FE">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 15:58:22 UTC</createdTime>
+<generatorID>40A46928-3E4D-A779-4565-EC6CD692BCFC</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<referedAttribute>570F7704-69E8-2265-BFD6-CEE31C294A6E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_boxa" id="22AB0403-320A-2107-5CB0-719EBBA8E76D">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 16:33:11 UTC</createdTime>
+<generatorID>1D5C0F1A-1CBF-B486-2215-9EBADA5EA183</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<referedAttribute>1FA5B886-06B8-94D3-FC36-59AB48D51848</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_angajat" id="B7B90D5D-AF10-EC15-A2A9-A1F52EEF321D">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:27:49 UTC</createdTime>
+<generatorID>5E95996E-8859-1DC8-8FC2-EA20AF85260B</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<referedAttribute>F9969C44-9941-A203-387F-2842A3887324</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F21B1998-3F64-D2AB-11A5-37D5547A7BE8" name="Programari PK">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-11-19 10:53:51 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>05D8C3E1-3746-F6E1-FDDC-F7AC1288DC6E</newElementsIDs>
+<usedAttributes>
+<attributeRef>05D8C3E1-3746-F6E1-FDDC-F7AC1288DC6E</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="8DAC8A5E-096E-25AC-70A2-6C265ED50A6D" name="prog_dob">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 16:10:56 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<newElementsIDs>FCDDDE76-E4B7-D0FE-E8D0-3DEC632C8249,7152DCE2-EBA3-AE10-2236-3345C7D658A9,EDFCD148-A8EF-66AA-B4A4-E05C3181DCE0</newElementsIDs>
+<usedAttributes>
+<attributeRef>FCDDDE76-E4B7-D0FE-E8D0-3DEC632C8249</attributeRef>
+<attributeRef>7152DCE2-EBA3-AE10-2236-3345C7D658A9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

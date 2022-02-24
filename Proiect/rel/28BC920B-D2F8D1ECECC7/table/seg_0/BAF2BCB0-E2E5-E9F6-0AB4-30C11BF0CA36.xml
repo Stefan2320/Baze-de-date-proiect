@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BAF2BCB0-E2E5-E9F6-0AB4-30C11BF0CA36" name="Salar">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>34E6D736-F9AF-5CF6-E2D6-58514BF4EF4C</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_angajat" id="DF229273-BD49-7834-FC65-2BEC038798FD">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>79A7BA9D-391C-D7C9-DCB4-9CD9914BEAF5</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6845F30C-6323-39B6-8CB2-2A3641D0889E" referredColumn="CB5A6735-18ED-5AE7-54E9-7C2A9E02EC28"/>
+</associations>
+</Column>
+<Column name="salar" id="0A8C4280-C642-7579-C20E-A4C66D4AF04B">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>898FB21A-2B9B-AF1B-DE60-800AEB8DF699</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<constraintName>salar_sal_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="salar&gt;1000"/>
+</checkConstraint>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bonus" id="CB1F131E-C0A0-A7B0-290E-45FED18551E2">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>50B9D878-6AE2-7E4C-391C-A6CE0E278FF0</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<constraintName>bonus_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="bonus&gt;=0"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total" id="511C14FC-F458-974A-2406-8BD7D813031A">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>436236C8-7E68-88F4-DDE8-9E87EC9F5B07</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<constraintName>total_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="total &gt; 1000"/>
+</checkConstraint>
+<ownDataTypeParameters>,30,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="62584380-F323-C9A9-6769-980C724F79C3" name="Bani_pe_luna_PK">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>2D50E956-29D0-8F5E-D221-9E434BA7708D</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF229273-BD49-7834-FC65-2BEC038798FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A4663AFD-B924-1A00-F002-1BC5771EFE7B" name="salar_angajati_fk">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<generatorID>45C526EB-E0CC-0249-CE8A-D080EA508479</generatorID>
+<ownerDesignName>Proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF229273-BD49-7834-FC65-2BEC038798FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

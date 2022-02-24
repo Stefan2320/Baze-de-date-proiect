@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5844D5AF-361D-191C-891F-805A1643DD21" name="Angajati">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-11-05 10:17:05 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_angajat" id="F9969C44-9941-A203-387F-2842A3887324">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:27:37 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume" id="9FE0B170-2BF2-308A-515F-0A1DD6D98FF3">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-11-05 10:18:17 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<constraintName>Angajati_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(nume)&gt;1 "/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ore_lucrate" id="5C23E3FC-FB85-A6DE-9C02-71EC618F1ED0">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-11-05 10:18:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<constraintName>Angajati_ore_lucrate_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(ore_lucrate) &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bonus_bani" id="F5EEFE0A-51A5-7E25-9F62-B57D9FB40DB8">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-11-05 10:18:52 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<constraintName>bonus_bani_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="bonus_bani&gt;=0"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0B729122-8B13-D186-84DD-8E1854BF318B" name="Angajati PK">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-11-05 10:33:12 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F9969C44-9941-A203-387F-2842A3887324</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

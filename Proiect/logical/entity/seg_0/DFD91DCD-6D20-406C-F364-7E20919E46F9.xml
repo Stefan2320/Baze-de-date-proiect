@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DFD91DCD-6D20-406C-F364-7E20919E46F9" name="List_servicii">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 15:55:17 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_serviciu" id="570F7704-69E8-2265-BFD6-CEE31C294A6E">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 15:55:29 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume_serviciu" id="81151774-103B-2A15-4427-07AFF062BC1F">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 15:55:40 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<constraintName>nume_serv_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="nume_serviciu IN (&apos;detailing interior&apos;,&apos;detailing motor&apos;,&apos;detailing exterior&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="clasa" id="27564167-7127-74DE-1D53-A5BDD157BD90">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 15:56:08 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<constraintName>clasa_list_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="A" description=""/>
+<valueDef value="B" description=""/>
+<valueDef value="C" description=""/>
+<valueDef value="D" description=""/>
+</listOfValues>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="durata" id="5C6549AC-F369-6130-377F-F03D1BAF3ADD">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 15:56:31 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<constraintName>durata_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="durata BETWEEN 0 AND 8"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pret" id="8DF45999-8D06-F8EA-810B-240C7B9766DE">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 15:56:42 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<constraintName>pret_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="pret &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="59149D22-01EA-4AE1-59B8-8EAD6A38988D" name="List_servicii PK">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 15:55:35 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>570F7704-69E8-2265-BFD6-CEE31C294A6E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

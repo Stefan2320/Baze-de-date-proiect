@@ -1,0 +1,67 @@
+INSERT INTO BOXE(lungime,latime) VALUES(3,2);
+INSERT INTO BOXE(lungime,latime) VALUES(3,3);
+INSERT INTO BOXE(lungime,latime) VALUES(1,2);
+INSERT INTO BOXE(lungime,latime) VALUES(4,2);
+INSERT INTO BOXE(lungime,latime) VALUES(5,1);
+INSERT INTO BOXE(lungime,latime) VALUES(2,2);
+INSERT INTO BOXE(lungime,latime) VALUES(1,2);
+
+
+select * from boxe;
+
+INSERT INTO ANGAJATI(nume,ore_lucrate,bonus_bani) VALUES('Ionel',0,0);
+INSERT INTO ANGAJATI(nume,ore_lucrate,bonus_bani) VALUES('David',0,0);
+INSERT INTO ANGAJATI(nume,ore_lucrate,bonus_bani) VALUES('Andrei',0,0);
+INSERT INTO ANGAJATI(nume,ore_lucrate,bonus_bani) VALUES('Gabriel',0,0);
+INSERT INTO ANGAJATI(nume,ore_lucrate,bonus_bani) VALUES('Ioana',0,0);
+INSERT INTO ANGAJATI(nume,ore_lucrate,bonus_bani) VALUES('Delia',0,0);
+INSERT INTO ANGAJATI(nume,ore_lucrate,bonus_bani) VALUES('Cosmin',0,0);
+
+select * from angajati;
+
+INSERT INTO SALAR values (1,1001,0,1500);
+INSERT INTO SALAR values (2,1001,0,1700);
+INSERT INTO SALAR values (3,1001,0,1200);
+INSERT INTO SALAR values (4,1001,0,1100);
+INSERT INTO SALAR values (5,1001,0,1900);
+INSERT INTO SALAR values (6,1001,0,1900);
+
+select * from salar;
+
+INSERT INTO LIST_SERVICII(nume_serviciu,clasa,durata,pret) VALUES('detailing interior','A',3,300);
+INSERT INTO LIST_SERVICII(nume_serviciu,clasa,durata,pret) VALUES('detailing interior','B',3.5,350);
+INSERT INTO LIST_SERVICII(nume_serviciu,clasa,durata,pret) VALUES('detailing interior','C',4,400);
+INSERT INTO LIST_SERVICII(nume_serviciu,clasa,durata,pret) VALUES('detailing interior','D',4.5,450);
+
+INSERT INTO LIST_SERVICII(nume_serviciu,clasa,durata,pret) VALUES('detailing exterior','A',4,400);
+INSERT INTO LIST_SERVICII(nume_serviciu,clasa,durata,pret) VALUES('detailing exterior','B',4.5,450);
+INSERT INTO LIST_SERVICII(nume_serviciu,clasa,durata,pret) VALUES('detailing exterior','C',5,500);
+INSERT INTO LIST_SERVICII(nume_serviciu,clasa,durata,pret) VALUES('detailing exterior','D',5.5,550);
+
+INSERT INTO LIST_SERVICII(nume_serviciu,clasa,durata,pret) VALUES('detailing motor','A',1,100);
+INSERT INTO LIST_SERVICII(nume_serviciu,clasa,durata,pret) VALUES('detailing motor','B',1.5,125);
+INSERT INTO LIST_SERVICII(nume_serviciu,clasa,durata,pret) VALUES('detailing motor','C',2,150);
+INSERT INTO LIST_SERVICII(nume_serviciu,clasa,durata,pret) VALUES('detailing motor','D',3,300);
+
+
+select * from list_servicii;
+
+
+INSERT INTO CLIENTI(birthdate,oras,nume_client) VALUES(TO_DATE('24/11/2012','DD/MM/YYYY'),'IASI','Geani');
+INSERT INTO CLIENTI(birthdate,oras,nume_client) VALUES(TO_DATE('24/11/2012','DD/MM/YYYY'),'BUC','Alex');
+INSERT INTO CLIENTI(birthdate,oras,nume_client) VALUES(TO_DATE('26/11/2012','DD/MM/YYYY'),'BRASOV','Calu');
+INSERT INTO CLIENTI(birthdate,oras,nume_client) VALUES(TO_DATE('26/11/2000','DD/MM/YYYY'),'GALATI','Daria');
+INSERT INTO CLIENTI(birthdate,oras,nume_client) VALUES(TO_DATE('28/11/2000','DD/MM/YYYY'),'VASLUI','Anastasia');
+
+
+select * from clienti;
+
+
+
+INSERT INTO programari(data,ora,id_client,id_serviciu,id_boxa,ID_ANGAJAT) VALUES(TO_DATE('24/11/2022','DD/MM/YYYY'),14.5,1,1,1,1);
+INSERT INTO programari(data,ora,id_client,id_serviciu,id_boxa,ID_ANGAJAT) VALUES(TO_DATE('24/11/2022','DD/MM/YYYY'),15.5,3,2,1,2);
+INSERT INTO programari(data,ora,id_client,id_serviciu,id_boxa,ID_ANGAJAT) VALUES(TO_DATE('26/11/2022','DD/MM/YYYY'),14.5,2,3,2,3);
+INSERT INTO programari(data,ora,id_client,id_serviciu,id_boxa,ID_ANGAJAT) VALUES(TO_DATE('26/11/2022','DD/MM/YYYY'),15.5,4,4,3,4);
+INSERT INTO programari(data,ora,id_client,id_serviciu,id_boxa,ID_ANGAJAT) VALUES(TO_DATE('28/11/2022','DD/MM/YYYY'),15.5,5,5,4,5);
+
+select * from programari;

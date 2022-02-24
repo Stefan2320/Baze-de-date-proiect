@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Angajati" directorySegmentName="seg_0" id="E0D148B4-0022-87FF-59AE-4F622E66D80A">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="bonus_bani" id="9ED38EB8-3EE0-1B7E-EDE5-18E17DC6BB65">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nume" id="B4CD86EA-D1C3-4785-2D4B-930D144CD12C">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_angajat" id="CB5A6735-18ED-5AE7-54E9-7C2A9E02EC28">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ore_lucrate" id="FBBBCF73-B121-71DA-6300-BD89A8552351">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Angajati_PK" id="963A8444-5110-6E54-438E-2269AB63F420">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

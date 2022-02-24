@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="Trg1" directorySegmentName="seg_0" id="8B5EE4A7-CE6D-22DD-F05A-96FB8DA2FCFB">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:30:00 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+	IF( :new.data < SYSDATE )
+	THEN
+		RAISE_APPLICATION_ERROR( -20001,
+			'Data invalida: ' || TO_CHAR( :new.data, 'DD.MM.YYYY' ) || ' trebuie sa fie mai mare decat data curenta.' );
+	END IF;
+END; ]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>606DC49D-0A95-4872-82F6-07448A974851</table>
+</TriggerOraclev10g>

@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9172E679-4C2B-B062-A050-94F2E768279B" name="Clienti">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-11-05 10:20:37 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="birthdate" id="0FBF0152-B5C5-0BEF-7C1B-7A8F9973934A">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-11-05 10:21:17 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<constraintName>birthdate_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="birthdate&gt;TO_DATE(&apos;1 JAN 1950&apos;,&apos;DD MON YYYY&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="oras" id="DA6400B7-5942-8798-AC9B-5CA5110981CD">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-11-05 10:21:23 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<constraintName>AC_oras_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(oras) &gt; 2"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume_client" id="0E9ABA4F-816A-C15B-BDB5-A12E5D898161">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 15:51:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<constraintName>nume_cl_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(nume_client)&gt;1"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_client" id="F7314B32-40CD-4105-C88D-D7719F8D7E26">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-14 20:11:45 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="65797966-C24B-4012-B7BF-A05556D0B10B" name="An_Clie PK">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-13 14:20:35 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F7314B32-40CD-4105-C88D-D7719F8D7E26</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

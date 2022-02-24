@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Salar" directorySegmentName="seg_1" id="BAF2BCB0-E2E5-E9F6-0AB4-30C11BF0CA36">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="salar" id="0A8C4280-C642-7579-C20E-A4C66D4AF04B">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="total" id="511C14FC-F458-974A-2406-8BD7D813031A">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="bonus" id="CB1F131E-C0A0-A7B0-290E-45FED18551E2">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_angajat" id="DF229273-BD49-7834-FC65-2BEC038798FD">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="salar_angajati_fk" id="A4663AFD-B924-1A00-F002-1BC5771EFE7B">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Bani_pe_luna_PK" id="62584380-F323-C9A9-6769-980C724F79C3">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 18:29:32 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

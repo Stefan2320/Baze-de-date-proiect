@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="servicii_programari_fk" directorySegmentName="seg_0" id="40A46928-3E4D-A779-4565-EC6CD692BCFC">
+<createdBy>Belgi</createdBy>
+<createdTime>2021-12-21 15:58:22 UTC</createdTime>
+<ownerDesignName>Proiect</ownerDesignName>
+<engineerTo>
+<item key="28BC920B-6A0C-37C3-2CC8-D2F8D1ECECC7" value="true"/>
+</engineerTo>
+<sourcePk>59149D22-01EA-4AE1-59B8-8EAD6A38988D</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>este preluat </nameOnSource>
+<nameOnTarget>face</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DFD91DCD-6D20-406C-F364-7E20919E46F9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4FD9C7CC-8A36-47B5-0C4B-CB167F29F0E0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
